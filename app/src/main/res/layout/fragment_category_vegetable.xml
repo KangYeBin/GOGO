@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2,3"
+    android:layout_margin="10dp"
+    tools:context="category.Vegetable">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_eggplant"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eggplant" />
+            <TextView
+                android:id="@+id/tv_eggplant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가지"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_potato"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/potato" />
+
+            <TextView
+                android:id="@+id/tv_potato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="감자"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_sweetpotato"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/sweetpotato" />
+            <TextView
+                android:id="@+id/tv_sweetpotato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고구마"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_hotpepper"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/hotpepper" />
+            <TextView
+                android:id="@+id/tv_hotpepper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고추"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_perillaleaf"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/perillaleaf" />
+            <TextView
+                android:id="@+id/tv_perillaleaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="깻잎"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_vegetables"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vegetables" />
+            <TextView
+                android:id="@+id/tv_vegetables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나물"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_carrot"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/carrot" />
+            <TextView
+                android:id="@+id/tv_carrot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당근"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_garlic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/garlic" />
+            <TextView
+                android:id="@+id/tv_garlic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마늘"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_whiteradish"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/whiteradish" />
+            <TextView
+                android:id="@+id/tv_whiteradish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="무"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_napacabbage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/napacabbage" />
+            <TextView
+                android:id="@+id/tv_napacabbage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배추"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_mushroom"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mushroom" />
+            <TextView
+                android:id="@+id/tv_mushroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버섯"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_chives"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/chives" />
+            <TextView
+                android:id="@+id/tv_chives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="부추"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_broccoli"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/broccoli" />
+            <TextView
+                android:id="@+id/tv_broccoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="브로콜리"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_lettuce"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lettuce" />
+            <TextView
+                android:id="@+id/tv_lettuce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상추"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_onion"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/onion" />
+            <TextView
+                android:id="@+id/tv_onion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="양파"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_cucumber"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/cucumber" />
+            <TextView
+                android:id="@+id/tv_cucumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오이"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_springonion"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/springonion" />
+            <TextView
+                android:id="@+id/tv_springonion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_redpaprika"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/redpaprika" />
+
+            <TextView
+                android:id="@+id/tv_redpaprika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파프리카"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_paprika"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/paprika" />
+
+            <TextView
+                android:id="@+id/tv_paprika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피망"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_vegetableetc"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/sidedish" />
+            <TextView
+                android:id="@+id/tv_vegetableetc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타 채소"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>

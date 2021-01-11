@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinComplete">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="292dp"
+        android:layout_height="281dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/congratuation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/avd" />
+
+    <TextView
+        android:id="@+id/congratuation"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="332dp"
+        android:text="회원가입을 축하드립니다"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/usernumber1"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="회원님의 냉장고 코드는"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/congratuation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/congratuation"
+        app:layout_constraintTop_toBottomOf="@+id/congratuation" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:text="입니다."
+        android:textAlignment="center"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userrefcode"
+        app:layout_constraintEnd_toEndOf="@+id/usernumber1"
+        app:layout_constraintTop_toTopOf="@+id/userrefcode" />
+
+    <TextView
+        android:id="@+id/userrefcode"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:text="123456"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gologin"
+        app:layout_constraintStart_toStartOf="@+id/usernumber1" />
+
+    <Button
+        android:id="@+id/btn_gologin"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="130dp"
+        android:background="@color/maingreen"
+        android:onClick="gologin"
+        android:text="로그인 하러가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/congratuation"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/congratuation"
+        app:layout_constraintTop_toBottomOf="@+id/congratuation"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

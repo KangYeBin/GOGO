@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_calendar">
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.gogo.ui.Calendar"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_header_menu"
+            app:destination="@id/nav_header_menu" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_calendarlist"
+            app:destination="@id/nav_calendarlist" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_foodreginfo"
+            app:destination="@id/nav_foodreginfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_calendarlist"
+        android:name="com.example.gogo.ui.CalendarListView"
+        android:label="menu_calendardatelist"
+        tools:layout="@layout/fragment_calendardatelist" >
+        <action
+            android:id="@+id/action_nav_calendarlist_to_nav_calendar"
+            app:destination="@id/nav_calendar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_header_menu"
+        android:name="com.example.gogo.MenuBar"
+        android:label="@string/menu_bar"
+        tools:layout="@layout/activity_menubar" >
+        <action
+            android:id="@+id/action_nav_header_menu_to_nav_showuserinfo"
+            app:destination="@id/nav_showuserinfo" />
+        <action
+            android:id="@+id/action_nav_header_menu_to_nav_calendar"
+            app:destination="@id/nav_calendar" />
+        <action
+            android:id="@+id/action_nav_header_menu_to_nav_showfoodreginfolist"
+            app:destination="@id/nav_showfoodreginfolist" />
+        <action
+            android:id="@+id/action_nav_header_menu_to_nav_board2"
+            app:destination="@id/nav_board" />
+        <action
+            android:id="@+id/action_nav_header_menu_to_nav_setting"
+            app:destination="@id/nav_setting" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_userinfo"
+        android:name="com.example.gogo.ui.UserInfo"
+        android:label="@string/menu_userinfo"
+        tools:layout="@layout/fragment_userinfo" >
+        <action
+            android:id="@+id/action_nav_userinfo_to_nav_showuserinfo"
+            app:destination="@id/nav_showuserinfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_showuserinfo"
+        android:name="com.example.gogo.ui.ShowUserInfo"
+        android:label="@string/menu_showuserinfo"
+        tools:layout="@layout/fragment_showuserinfo" >
+        <action
+            android:id="@+id/action_nav_showuserinfo_to_nav_checkpw"
+            app:destination="@id/nav_checkpw" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_checkpw"
+        android:name="com.example.gogo.ui.CheckPW"
+        android:label="@string/menu_checkpw"
+        tools:layout="@layout/fragment_checkpw" >
+        <action
+            android:id="@+id/action_nav_checkpw_to_nav_userinfo"
+            app:destination="@id/nav_userinfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_showfoodreginfolist"
+        android:name="com.example.gogo.ui.ShowFoodReginfoList"
+        android:label="showfoodreginfolist"
+        tools:layout="@layout/fragment_showfoodreginfolist" >
+        <action
+            android:id="@+id/action_nav_showfoodreginfolist_to_nav_foodreginfo"
+            app:destination="@id/nav_foodreginfo" />
+        <action
+            android:id="@+id/action_nav_showfoodreginfolist_to_nav_showfoodreginfo"
+            app:destination="@id/nav_showfoodreginfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_showfoodreginfo"
+        android:name="com.example.gogo.ui.ShowFoodReginfo"
+        android:label="showfoodreginfo"
+        tools:layout="@layout/fragment_showfoodreginfo" >
+        <action
+            android:id="@+id/action_nav_showfoodreginfo_to_nav_foodreginfomod"
+            app:destination="@id/nav_foodreginfomod" />
+        <action
+            android:id="@+id/action_nav_showfoodreginfo_to_nav_showfoodreginfolist"
+            app:destination="@id/nav_showfoodreginfolist" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_foodreginfo"
+        android:name="com.example.gogo.ui.FoodReginfo"
+        android:label="@string/menu_foodreginfo"
+        tools:layout="@layout/fragment_foodreginfo" >
+        <action
+            android:id="@+id/action_nav_foodreginfo_to_nav_showfoodreginfolist"
+            app:destination="@id/nav_showfoodreginfolist" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_expstandard"
+        android:name="com.example.gogo.EXPstandard.EXPStandard"
+        android:label="menu_expstandard"
+        tools:layout="@layout/activity_expstandardtab" >
+        <action
+            android:id="@+id/action_nav_expstandard_to_nav_foodreginfo"
+            app:destination="@id/nav_foodreginfo" />
+        <action
+            android:id="@+id/action_nav_expstandard_to_nav_foodreginfomod"
+            app:destination="@id/nav_foodreginfomod" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_foodreginfomod"
+        android:name="com.example.gogo.ui.FoodReginfoMod"
+        android:label="menu_foodreginfomod"
+        tools:layout="@layout/fragment_foodreginfomod" >
+        <action
+            android:id="@+id/action_nav_foodreginfomod_to_nav_expstandard"
+            app:destination="@id/nav_expstandard" />
+        <action
+            android:id="@+id/action_nav_foodreginfomod_to_nav_showfoodreginfo"
+            app:destination="@id/nav_showfoodreginfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.gogo.ui.Category"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_board"
+        android:name="com.example.gogo.ui.Board"
+        android:label="@string/menu_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_nav_board_to_nav_showboard"
+            app:destination="@id/nav_showboard" />
+        <action
+            android:id="@+id/action_nav_board_to_nav_boardwrite"
+            app:destination="@id/nav_boardwrite" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_showboard"
+        android:name="com.example.gogo.ui.ShowBoard"
+        android:label="nav_showboard"
+        tools:layout="@layout/fragment_showboard" >
+        <action
+            android:id="@+id/action_nav_showboard_to_nav_board"
+            app:destination="@id/nav_board" />
+        <action
+            android:id="@+id/action_nav_showboard_to_nav_boardmodify"
+            app:destination="@id/nav_boardmodify" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.gogo.ui.Setting"
+        android:label="setting"
+        tools:layout="@layout/fragment_configuration">
+        <action
+            android:id="@+id/action_nav_setting_to_nav_faq"
+            app:destination="@id/nav_faq" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.example.gogo.ui.FAQ"
+        android:label="@string/menu_faq"
+        tools:layout="@layout/fragment_faq">
+        <action
+            android:id="@+id/action_nav_faq_to_nav_setting"
+            app:destination="@id/nav_setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_boardwrite"
+        android:name="com.example.gogo.ui.BoardWrite"
+        android:label="nav_boardwrite"
+        tools:layout="@layout/fragment_boardwrite" >
+        <action
+            android:id="@+id/action_nav_boardwrite_to_nav_board"
+            app:destination="@id/nav_board" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_boardmodify"
+        android:name="com.example.gogo.ui.BoardModify"
+        android:label="nav_boardmodify"
+        tools:layout="@layout/fragment_boardmodify" >
+        <action
+            android:id="@+id/action_nav_boardmodify_to_nav_board"
+            app:destination="@id/nav_board" />
+        <action
+            android:id="@+id/action_nav_boardmodify_to_nav_showboard"
+            app:destination="@id/nav_showboard" />
+    </fragment>
+</navigation>

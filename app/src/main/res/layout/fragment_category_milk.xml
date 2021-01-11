@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2,3"
+    android:layout_margin="10dp"
+    tools:context="category.Milk">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_butter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/butter" />
+            <TextView
+                android:id="@+id/tv_butter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버터"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_milkpowder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/milkpowder" />
+            <TextView
+                android:id="@+id/tv_milkpowder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분유"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_freshcream"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/freshcream" />
+            <TextView
+                android:id="@+id/tv_freshcream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생크림"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_yogurt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/yogurt" />
+            <TextView
+                android:id="@+id/tv_yogurt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="요거트"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_yoghrut"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/yoghrut" />
+            <TextView
+                android:id="@+id/tv_yoghrut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="요구르트"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_milk"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/milk2" />
+            <TextView
+                android:id="@+id/tv_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우유"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_cheese"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/cheese" />
+            <TextView
+                android:id="@+id/tv_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="치즈"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_milketc"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/blank"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/sidedish" />
+            <TextView
+                android:id="@+id/tv_milketc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타 유제품"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+    </TableRow>
+
+</TableLayout>

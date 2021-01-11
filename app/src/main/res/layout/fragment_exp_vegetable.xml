@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fastScrollEnabled="true"
+   >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/tv_springonion_exp"
+                android:text="대파 냉장 10일, 냉동 1개월"/>
+
+            <TextView
+                android:id="@+id/tv_springonion_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="시든 잎과 뿌리는 제거하고 깨끗이 씻어 물기를 닦는다. 밀폐용기에 종이타월을 깔고 넣어 냉장하거나 용도별로 썰어서 소분해 냉동하면 된다. 뿌리에 흙이 묻은 파는 그대로 시원한 곳에 뿌리를 아래쪽으로 세워둔다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_onion_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="양파 냉장 1주" />
+
+            <TextView
+                android:id="@+id/tv_onion_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="봄 양파는 수분과 당분이 많아 금방 싹이 나므로 손질한 뒤 랩으로 감싸 냉장 보관한다. 가을 양파는 껍질이 있는 상태로 망에 넣어 바람이 잘 통하는 그늘진 곳에 둔다." />
+
+            <TextView
+                android:id="@+id/tv_eggplant_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="가지 냉장 5일" />
+
+            <TextView
+                android:id="@+id/tv_eggplant_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="차가운 온도에서는 물러지므로 빨리 먹을 것이라면 상온에 둘 것. 냉장할 때는 랩으로 감싸 채소칸에 보관한다.
+" />
+
+            <TextView
+                android:id="@+id/tv_broccoli_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="브로콜리 냉장 1주, 냉동 1개월" />
+
+            <TextView
+                android:id="@+id/tv_broccoli_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="그대로 채소칸에 두고 요리하기 전에 꺼내 쓰면 된다. 손질해둘 때는 송이를 나눠 살짝 데친 후 지퍼백에 담아 냉장 또는 냉동 보관한다. 이렇게 하면 냉장은 3일, 냉동은 1개월까지 섭취 가능.
+" />
+
+            <TextView
+                android:id="@+id/tv_carrot_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="당근 냉장 2주" />
+
+            <TextView
+                android:id="@+id/tv_carrot_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="종이타월로 감싸 지퍼백에 담아 냉장 보관하거나, 껍질을 벗겨 지퍼백에 넣어 냉동실에 넣어둔다. 흙이 묻은 당근은 씻지 말고 신문지로 감싸두면 1개월까지 상온 보관이 가능하다.
+
+" />
+
+            <TextView
+                android:id="@+id/tv_cucumber_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="오이 냉장 1주" />
+
+            <TextView
+                android:id="@+id/tv_cucumber_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오이는 수분이 많아 너무 낮은 온도에 보관하면 얼어버리므로 랩으로 싸서 채소칸에 보관한다." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cookingoil_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="식용유 / 상온 2년"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_cookingoil_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="직사광선에 노출되면 산화가 빨리 진행되니 그늘진 곳에 보관한다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_sesameoil_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="참기름 상온 3개월"
+                />
+
+            <TextView
+                android:id="@+id/tv_sesameoil_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="공기와 햇빛에 노출되면 쉽게 상하므로 입구가 작은병에 넣어 마개로 꼭 막아야 한다. 바람이 잘 통하고 습기가 적은 곳, 온도 변화가 없는 곳에 둔다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_redpepperpowder_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="고춧가루 냉동 1년" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지퍼백에 담아 냉동 보관하고, 쓸 만큼씩 덜어서 직사광선이 들지 않는 서늘한 곳에 보관한다."
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

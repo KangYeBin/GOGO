@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileModify">
+
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iconmod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btn_iconmod"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="64dp"
+        android:background="#00ff0000"
+        android:text="아이콘 수정"
+        app:layout_constraintBottom_toTopOf="@+id/et_nickname"
+        app:layout_constraintEnd_toEndOf="@+id/image_icon"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/image_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="49dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:text="닉네임"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_nickname" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="냉장고이름"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:hint="닉네임을 입력하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_checknick"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/btn_checknick"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_refname"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint=" 나의 냉장고"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="@+id/et_nickname"
+        app:layout_constraintStart_toStartOf="@+id/et_nickname" />
+
+    <Button
+        android:id="@+id/btn_checknick"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/maingreen"
+        android:text="중복"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/et_nickname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_mcheck"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:background="@color/maingreen"
+        android:text="확인"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:background="@color/maingreen"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_mcheck"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

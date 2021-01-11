@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join">
+
+    <TextView
+        android:id="@+id/titlejoin"
+        android:layout_width="117dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="JOIN"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="닉네임을 입력하세요"
+        android:inputType="textPersonName"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_name" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/maingreen"
+        android:onClick="ConClick"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_ref"
+        app:layout_constraintTop_toBottomOf="@+id/et_ref"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="ID를 입력하세요"
+        android:inputType="textPersonName"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toTopOf="@+id/et_pw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameid"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="23dp"
+        android:text="ID"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_id"
+        app:layout_constraintEnd_toStartOf="@+id/et_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/namepw"
+        app:layout_constraintTop_toTopOf="@+id/et_id" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/maingreen"
+        android:text="가입"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="@+id/et_ref"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_pwcheck"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="비밀번호를 확인하세요"
+        android:inputType="textPassword"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
+        app:layout_constraintEnd_toEndOf="@+id/et_pw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_pw" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:hint="이메일을 입력하세요"
+        android:inputType="textEmailAddress"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_nickname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_nickname" />
+
+    <TextView
+        android:id="@+id/namenickname"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:text="닉네임"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nickname"
+        app:layout_constraintStart_toStartOf="@+id/nameemail"
+        app:layout_constraintTop_toTopOf="@+id/et_nickname" />
+
+    <TextView
+        android:id="@+id/namecheckpw"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:text="PW확인"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_pwcheck"
+        app:layout_constraintEnd_toStartOf="@+id/et_pwcheck"
+        app:layout_constraintTop_toTopOf="@+id/et_pwcheck" />
+
+    <Button
+        android:id="@+id/btn_checkID"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/maingreen"
+        android:text="중복"
+        app:layout_constraintBottom_toBottomOf="@+id/et_id"
+        app:layout_constraintStart_toEndOf="@+id/et_id"
+        app:layout_constraintTop_toTopOf="@+id/et_id"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toTopOf="@+id/et_pwcheck"
+        app:layout_constraintEnd_toEndOf="@+id/et_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_id" />
+
+    <TextView
+        android:id="@+id/namename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="이름"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@id/namenickname"
+        app:layout_constraintTop_toTopOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="이름을 입력하세요"
+        android:inputType="textPersonName"
+        android:theme="@style/edittextline"
+        app:layout_constraintBottom_toTopOf="@+id/et_nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameemail"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="15dp"
+        android:text="이메일"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email"
+        app:layout_constraintEnd_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toTopOf="@+id/et_email" />
+
+    <TextView
+        android:id="@+id/namepw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="PW"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_pw"
+        app:layout_constraintEnd_toStartOf="@+id/et_pw"
+        app:layout_constraintTop_toTopOf="@+id/et_pw" />
+
+    <ImageView
+        android:id="@+id/img_pwcheck"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_pwcheck"
+        app:layout_constraintStart_toEndOf="@+id/et_pwcheck"
+        app:layout_constraintTop_toTopOf="@+id/et_pwcheck"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/no" />
+
+    <Button
+        android:id="@+id/btn_checknick"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/maingreen"
+        android:text="중복"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nickname"
+        app:layout_constraintStart_toEndOf="@+id/et_nickname"
+        app:layout_constraintTop_toTopOf="@+id/et_nickname"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/btn_checkemail"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:background="@color/maingreen"
+        android:text="중복"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email"
+        app:layout_constraintStart_toEndOf="@+id/et_email"
+        app:layout_constraintTop_toTopOf="@+id/et_email"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="냉장고코드"
+        app:layout_constraintBottom_toBottomOf="@+id/et_ref"
+        app:layout_constraintEnd_toEndOf="@+id/nameemail"
+        app:layout_constraintTop_toTopOf="@+id/et_ref" />
+
+    <EditText
+        android:id="@+id/et_ref"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="128dp"
+        android:ems="10"
+        android:hint="냉장고코드를 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_email" />
+
+    <ImageView
+        android:id="@+id/img_question"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="112dp"
+        android:background="@color/blank"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:srcCompat="@drawable/questionmark" />
+
+    <Button
+        android:id="@+id/btn_checkref"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="136dp"
+        android:background="@color/maingreen"
+        android:text="확인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_checkemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_checkemail" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="함께 사용하는 냉장고가 있다면 코드를 입력해주세요."
+        android:textColor="#FF6C6C"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_question"
+        app:layout_constraintEnd_toEndOf="@+id/et_ref"
+        app:layout_constraintStart_toStartOf="@+id/et_ref"
+        app:layout_constraintTop_toTopOf="@+id/img_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/maingreen</item>
+        <item name="colorPrimaryDark">@color/maingreen</item>
+        <item name="colorAccent">@color/maingreen</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="firstmain" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/mainimage</item>
+    </style>
+
+    <style name = "edittextline" parent = "Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/maingreen</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

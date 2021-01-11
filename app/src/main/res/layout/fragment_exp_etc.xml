@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/tv_etc_exp1"
+                android:text="떡 상온 1일, 냉동 1개월"/>
+
+            <TextView
+                android:id="@+id/tv_etc_exp1_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="바로 먹을 것은 상온에 두고, 장기간 보관할 때는 랩으로 싸서 냉동한다." />
+
+            <TextView
+                android:id="@+id/tv_etc_exp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="빵 상온 2~3일, 냉동 3개월" />
+
+            <TextView
+                android:id="@+id/tv_etc_exp2_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="빵은 냄새를 잘 빨아들이는 성질이 강하므로 랩으로 싸서 냉동한다." />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

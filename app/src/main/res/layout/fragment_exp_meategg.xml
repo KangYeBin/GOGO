@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/tv_cow1_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="소고기 냉장 3~5일, 냉동 6개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_cow2_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="소고기 썬 것 냉장 3~4일, 냉동 6개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_cow3_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="소고기 간 것 냉장 1~2일, 냉동 2~3개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_cow4_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="양념 소고기 냉장 3일, 냉동 1개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_pig1_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="돼지고기 냉장 3일, 냉동 4~6개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_pig2_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="돼지고기 썬 것 냉장 3일, 냉동 4~6개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_pig3_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="돼지고기 간 것 냉장 2일, 냉동 4개월"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_chicken_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="닭고기 냉장 2일, 냉동 2개월" />
+
+            <TextView
+                android:id="@+id/tv_chicken_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="육질이 부드러워 얼리면 맛이 떨어진다. 냉동할 경우 손질한 뒤 삶아 뜨거울 때 지퍼백에 담아 보관한다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_egg_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="달걀 냉장 3~5주" />
+
+            <TextView
+                android:id="@+id/tv_egg_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="뾰족한 쪽이 아래로 오도록 세워서 보관한다. 냉장고 문 쪽은 여닫을 때 달걀이 흔들리니 냉장고 안쪽에 넣어둘 것. 달걀 껍데기가 냄새를 흡수하므로 향이 강한 식품과 같이 두지 않는다.
+
+ "
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

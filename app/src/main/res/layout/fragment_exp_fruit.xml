@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/tv_apple_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사과 냉장 3주" />
+
+            <TextView
+                android:id="@+id/tv_apple_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="사과에서 나오는 에틸렌 가스가 다른 과일이나 채소를 쉽게 숙성시키므로 따로 분리해 위생비닐에 담아 밀봉한다. 덜 익은 키위나 감을 함께 넣어두면 빨리 익는다.
+
+" />
+
+            <TextView
+                android:id="@+id/tv_pear_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="배 냉장 5~7일" />
+
+            <TextView
+                android:id="@+id/tv_pear_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="한 개씩 신문지에 싸서 냉장 보관한다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_grape_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="포도 냉장·상온 2~4일"
+                />
+
+            <TextView
+                android:id="@+id/tv_grape_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="씻지 않고 봉지에 담아 냉장 또는 상온 보관한다. 먹다 남은 것은 알맹이를 떼어 지퍼백에 넣어 냉동 보관할 것."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_peach_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="복숭아 냉장 3~5일" />
+
+            <TextView
+                android:id="@+id/tv_peach_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0~1℃ 정도의 냉장실에 보관해야 단맛이 나고, 이보다 더 낮은 온도에서는 단맛이 떨어진다. 덜 익은 것은 종이봉투에 담아 향이 나고 부드러워질 때까지 상온에 둔다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_watermelon_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="수박 냉장 5일" />
+
+            <TextView
+                android:id="@+id/tv_watermelon_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="자른 단면에 랩을 씌워 냉장 보관하고, 통째로 보관 할 때는 시원한 곳에 둔다."
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_banana_exp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="바나나 냉장 3일, 냉동 3주, 상온 1주" />
+
+            <TextView
+                android:id="@+id/tv_banana_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="껍질이 닿는 부분부터 쉽게 상하니 고리에 매달아 둔다. 껍질째 밀폐용기에 담아 냉장 보관하거나, 껍질 벗긴 것은 지퍼백에 넣어 냉동한다.
+
+ " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

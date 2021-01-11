@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_fish_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="생선 냉장 1~2일, 냉동 3개월" />
+
+            <TextView
+                android:id="@+id/tv_fish_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="머리와 내장을 제거한 뒤 깨끗이 씻어 1마리씩 지퍼백에 개별 포장해 냉기가 강한 냉장실 안쪽이나 생선 전용 칸에 보관한다.
+
+" />
+
+            <TextView
+                android:id="@+id/tv_clam_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="조개 냉장 2일, 냉동 1개월" />
+
+            <TextView
+                android:id="@+id/tv_clam_exp_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="생물 조개를 1회 분량씩 지퍼백에 담아 냉동한다. 조갯살은 연한 소금물에 흔들어 씻은 뒤 물기를 빼고 지퍼백에 담아 얇게 펴서 냉동할 것. 냉동해둔 조개는 해동하지 말고 바로 조리한다." />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
